@@ -17,7 +17,7 @@ func _on_body_entered(body: Node):
 		if inventory:
 			if inventory.add_item(self):
 				print("You've picked up a 'Healing Potion'")
-				queue_free()  # Remove the item from the scene
+				queue_free()
 		else:
 			print("Inventory node not found in player.")
 
