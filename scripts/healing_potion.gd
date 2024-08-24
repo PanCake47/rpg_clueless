@@ -1,8 +1,8 @@
 extends Area2D
 
-var item_name: String = "Healing Potion"
+var item_name: String = "Healing Potion"  
 var description: String = "Restores 20 HP."
-var icon_texture: Texture = ResourceLoader.load("res://assets/rpg_healing_potion.png")  # Ensure the path is correct
+var icon_texture: Texture = ResourceLoader.load("res://assets/rpg_healing_potion.png")
 
 func _ready():
 	if icon_texture:
@@ -21,7 +21,7 @@ func _on_body_entered(body: Node):
 		else:
 			print("Inventory node not found in player.")
 
-func use_potion(player: Node):
+func use_item(player: Node):
 	if item_name == "Healing Potion":
 		print("Using Healing Potion.")
 		player.heal(20)

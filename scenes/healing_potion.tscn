@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://cgebu14g20b32"]
+[gd_scene load_steps=4 format=3 uid="uid://cgebu14g20b32"]
 
 [ext_resource type="Script" path="res://scripts/healing_potion.gd" id="1_wft1f"]
+[ext_resource type="Texture2D" uid="uid://bu16i6wqid5xq" path="res://assets/rpg_healing_potion.png" id="2_wrnfr"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_u0645"]
 radius = 13.0
@@ -9,6 +10,7 @@ radius = 13.0
 script = ExtResource("1_wft1f")
 
 [node name="PotionSprite" type="Sprite2D" parent="."]
+texture = ExtResource("2_wrnfr")
 
 [node name="PotionCollision" type="CollisionShape2D" parent="."]
 position = Vector2(0, 4)

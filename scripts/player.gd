@@ -1,6 +1,5 @@
 extends CharacterBody2D
 
-
 var max_hp = 100 
 var current_hp = max_hp
 var speed = 300
@@ -17,7 +16,7 @@ func _input(event):
 		target_position = get_global_mouse_position()
 		is_moving = true
 
-func _process(_delta: float):
+func _process(_delta):
 	if is_moving:
 		var direction = (target_position - global_position).normalized()
 		velocity = direction * speed
@@ -29,9 +28,6 @@ func _process(_delta: float):
 		
 	if Input.is_action_just_pressed("move_right"):
 		take_damage(10)
-		print(current_hp)
-	if Input.is_action_just_pressed("move_left"):
-		heal(10)
 		print(current_hp)
 
 
