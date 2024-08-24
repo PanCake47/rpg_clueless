@@ -1,0 +1,82 @@
+[gd_scene load_steps=6 format=3 uid="uid://c3sr6ielx54ox"]
+
+[ext_resource type="Script" path="res://scripts/inventory.gd" id="1_1g8so"]
+[ext_resource type="Texture2D" uid="uid://dbc2lqhffknil" path="res://assets/rpg_inventory.png" id="1_4lvsg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_snr35"]
+atlas = ExtResource("1_4lvsg")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wy85m"]
+atlas = ExtResource("1_4lvsg")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kacx4"]
+atlas = ExtResource("1_4lvsg")
+region = Rect2(32, 0, 32, 32)
+
+[node name="Inventory" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1024.0
+offset_bottom = -688.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1g8so")
+
+[node name="ItemSlotsContainer" type="GridContainer" parent="."]
+custom_minimum_size = Vector2(256, 0)
+layout_mode = 0
+offset_right = 284.0
+offset_bottom = 32.0
+columns = 8
+
+[node name="InventoryButton" type="TextureButton" parent="ItemSlotsContainer"]
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_snr35")
+texture_pressed = SubResource("AtlasTexture_wy85m")
+texture_hover = SubResource("AtlasTexture_kacx4")
+
+[node name="InventoryButton2" type="TextureButton" parent="ItemSlotsContainer"]
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_snr35")
+texture_pressed = SubResource("AtlasTexture_wy85m")
+texture_hover = SubResource("AtlasTexture_kacx4")
+
+[node name="InventoryButton3" type="TextureButton" parent="ItemSlotsContainer"]
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_snr35")
+texture_pressed = SubResource("AtlasTexture_wy85m")
+texture_hover = SubResource("AtlasTexture_kacx4")
+
+[node name="InventoryButton4" type="TextureButton" parent="ItemSlotsContainer"]
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_snr35")
+texture_pressed = SubResource("AtlasTexture_wy85m")
+texture_hover = SubResource("AtlasTexture_kacx4")
+
+[node name="InventoryButton5" type="TextureButton" parent="ItemSlotsContainer"]
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_snr35")
+texture_pressed = SubResource("AtlasTexture_wy85m")
+texture_hover = SubResource("AtlasTexture_kacx4")
+
+[node name="InventoryButton6" type="TextureButton" parent="ItemSlotsContainer"]
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_snr35")
+texture_pressed = SubResource("AtlasTexture_wy85m")
+texture_hover = SubResource("AtlasTexture_kacx4")
+
+[node name="InventoryButton7" type="TextureButton" parent="ItemSlotsContainer"]
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_snr35")
+texture_pressed = SubResource("AtlasTexture_wy85m")
+texture_hover = SubResource("AtlasTexture_kacx4")
+
+[node name="InventoryButton8" type="TextureButton" parent="ItemSlotsContainer"]
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_snr35")
+texture_pressed = SubResource("AtlasTexture_wy85m")
+texture_hover = SubResource("AtlasTexture_kacx4")

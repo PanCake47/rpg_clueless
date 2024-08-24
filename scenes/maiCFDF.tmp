@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=3 uid="uid://dq4i5oheqv02e"]
+
+[ext_resource type="PackedScene" uid="uid://cpfcjdg61si3q" path="res://scenes/player.tscn" id="1_48nei"]
+[ext_resource type="PackedScene" uid="uid://cit30xxxx3jn7" path="res://scenes/map.tscn" id="1_wyv6l"]
+[ext_resource type="PackedScene" uid="uid://cxe5wbskmvo2i" path="res://scenes/player_gui.tscn" id="3_uajlg"]
+[ext_resource type="PackedScene" uid="uid://c3sr6ielx54ox" path="res://scenes/inventory.tscn" id="4_vdu07"]
+[ext_resource type="PackedScene" uid="uid://cgebu14g20b32" path="res://scenes/healing_potion.tscn" id="5_enhlo"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Map" parent="." instance=ExtResource("1_wyv6l")]
+
+[node name="Player" parent="." instance=ExtResource("1_48nei")]
+
+[node name="PlayerGUI" parent="Player" instance=ExtResource("3_uajlg")]
+anchors_preset = 0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = -640.0
+offset_top = -360.0
+offset_right = -384.0
+offset_bottom = -344.0
+
+[node name="Inventory" parent="Player" instance=ExtResource("4_vdu07")]
+offset_left = -127.0
+offset_top = 304.0
+offset_right = -127.0
+offset_bottom = 304.0
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+
+[node name="HealingPotion" parent="." instance=ExtResource("5_enhlo")]
+position = Vector2(43, -145)
+
+[node name="HealingPotion2" parent="." instance=ExtResource("5_enhlo")]
+position = Vector2(-143, -148)
+
+[node name="HealingPotion3" parent="." instance=ExtResource("5_enhlo")]
+position = Vector2(-119, -101)
+
+[node name="HealingPotion4" parent="." instance=ExtResource("5_enhlo")]
+position = Vector2(-187, -70)

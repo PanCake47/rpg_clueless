@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=4 uid="uid://cit30xxxx3jn7"]
+
+[ext_resource type="Texture2D" uid="uid://bu632qi2f5tac" path="res://assets/rpg_tileset.png" id="1_ptdeg"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6kdvy"]
+texture = ExtResource("1_ptdeg")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSet" id="TileSet_ib5bh"]
+physics_layer_0/collision_layer = 1
+sources/1 = SubResource("TileSetAtlasSource_6kdvy")
+
+[node name="map" type="TileMapLayer"]
+tile_map_data = PackedByteArray("AAAEAAAAAQAAAAAAAAADAAAAAQAAAAAAAAACAAAAAQAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAD//wAAAQAAAAAAAAD+/wAAAQAAAAAAAAD9/wAAAQAAAAAAAAD8/wAAAQAAAAAAAAD7/wAAAQAAAAAAAAAFAAAAAQAAAAAAAAAGAAAAAQAAAAAAAAAHAAAAAQAAAAAAAAAIAAAAAQAAAAAAAAAJAAAAAQAAAAAAAAAKAAAAAQAAAAAAAAD6/wAAAQAAAAAAAAD5/wAAAQAAAAAAAAD4/wAAAQAAAAAAAAD3/wAAAQAAAAAAAAD2/wAAAQAAAAAAAAD1/wAAAQAAAAAAAAD0/wAAAQAAAAAAAADz/wAAAQAAAAAAAADy/wAAAQAAAAAAAADx/wAAAQAAAAAAAADw/wAAAQAAAAAAAADv/wAAAQAAAAAAAAALAAAAAQAAAAAAAAAMAAAAAQAAAAAAAAANAAAAAQAAAAAAAAAOAAAAAQAAAAAAAAAPAAAAAQAAAAAAAAAQAAAAAQAAAAAAAAARAAAAAQAAAAAAAAA=")
+tile_set = SubResource("TileSet_ib5bh")
